@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DD07C3F-7CCB-4199-BCFA-4EB360B28E24}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DataArmor</RootNamespace>
+    <AssemblyName>DataArmor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="correlationClassification.cs" />
+    <Compile Include="K_AnonymityPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="K_AnonymityPage.Designer.cs">
+      <DependentUpon>K_AnonymityPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassificationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassificationPage.Designer.cs">
+      <DependentUpon>ClassificationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="csv_Binding.cs" />
+    <Compile Include="De-identify.cs" />
+    <Compile Include="De-IdentificationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="De-IdentificationPage.Designer.cs">
+      <DependentUpon>De-IdentificationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L-diversityPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L-diversityPage.Designer.cs">
+      <DependentUpon>L-diversityPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L-diversity_code.cs" />
+    <Compile Include="mergeTable.cs" />
+    <Compile Include="MultiDimMondrian.cs" />
+    <Compile Include="StartPoint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T_ClosenessPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T_ClosenessPage.Designer.cs">
+      <DependentUpon>T_ClosenessPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="T_closeness_code.cs" />
+    <Compile Include="UploadPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UploadPage.Designer.cs">
+      <DependentUpon>UploadPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WordList.cs" />
+    <EmbeddedResource Include="K_AnonymityPage.resx">
+      <DependentUpon>K_AnonymityPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassificationPage.resx">
+      <DependentUpon>ClassificationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="De-IdentificationPage.resx">
+      <DependentUpon>De-IdentificationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L-diversityPage.resx">
+      <DependentUpon>L-diversityPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="T_ClosenessPage.resx">
+      <DependentUpon>T_ClosenessPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadPage.resx">
+      <DependentUpon>UploadPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
