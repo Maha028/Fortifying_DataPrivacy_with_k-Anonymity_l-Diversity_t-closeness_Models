@@ -69,8 +69,8 @@ Protecting personal data has become crucial in today’s digital world, where va
 - [Visual Studio](https://visualstudio.microsoft.com/)
 
 ### Installation
-
-git clone https://github.com/Maha028/Fortifying_DataPrivacy_with_k-Anonymity_l-Diversity_t-closeness_Models.git
+```bash
+git clone https://github.com/Maha028/Fortifying_DataPrivacy_with_k-Anonymity_l-Diversity_t-closeness_Models.git```
 
 1. Open the solution file `DataArmor.sln` in Visual Studio.
 2. Build the solution (`Ctrl+Shift+B`)
