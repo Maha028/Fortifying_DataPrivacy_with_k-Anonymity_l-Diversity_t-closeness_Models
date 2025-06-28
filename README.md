@@ -71,6 +71,7 @@ Protecting personal data has become crucial in today’s digital world, where va
 ### Installation
 ```bash
 git clone https://github.com/Maha028/Fortifying_DataPrivacy_with_k-Anonymity_l-Diversity_t-closeness_Models.git
+````
 
 1. Open the solution file `DataArmor.sln` in Visual Studio.
 2. Build the solution (`Ctrl+Shift+B`)
@@ -88,7 +89,5 @@ git clone https://github.com/Maha028/Fortifying_DataPrivacy_with_k-Anonymity_l-D
 | `/DataAnalysis`             | Utility functions for data profiling/correlation |
 | `/Resources`                | Static icons/images used in UI                   |
 | `bin/Release/DataArmor.exe` | Compiled Windows application                     |
-
----
 
 
